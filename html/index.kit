@@ -5,34 +5,379 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kamil.M">
+    <meta name="keywords" content="">
+    <meta description="">
+
+    <!-- Icon to title -->
+
+    <link rel="icon" href="">
     <title>Document</title>
+
+    <!-- Montserrat -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100&display=swap"
+        rel="stylesheet">
+
+    <!-- css styles -->
+
+    <link rel="stylesheet" href="../dist/css/main.min.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="../dist/img/logo.png">
-            <!-- @include 'nav-mobile.kit' -->
-            <!-- @include 'nav-desktop.kit' -->
-        </div>
-        <div>
-            <h1>Myjnia Antek</h1>
-        </div>
-        <div>
-            <h2></h2>
-        </div>
-        <div>
-            <h2></h2>
-        </div>
-        <div>
-            <h2></h2>
-        </div>
-        <div>
-            <h2></h2>
+    <header class="header">
+        <!-- @include nav.kit -->
+        <div class="container">
+            <div class="wrapper">
+                <div class="top-bar">
+                    <img src="../dist/img/logo.webp" alt="" class="top-bar__logo">
+                    <div class="top-bar__burger-box">
+                        <div id="burger-btn" class="top-bar__burger-btn">
+                            <span id='burger-mid-bar' class='top-bar__burger-btn-mid-bar'></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-box">
+                    <div id="carousel-film" class="carousel">
+                        <div id="carousel-item-1" class="carousel-item carousel-item-1">
+                            <div class="carousel-item-content">
+                                <h1 class="carousel-item-content__main-title">Myjnia Antek</h1>
+                                <p class="carousel-item-content__text">Zapraszamy do skorzystania z naszych
+                                    profesjonalnych usług!</p>
+                                <a href="" class="carousel-item-content__link">Umyj u nas auto!</a>
+                            </div>
+                        </div>
+                        <div id="carousel-item-2" class="carousel-item carousel-item-2">
+                            <div class="carousel-item-content">
+                                <h1 class="carousel-item-content__title">Myjnia Samochodowa</h1>
+                                <p class="carousel-item-content__text">Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="carousel-item-content__link">Sprawdź naszą ofertę!</button>
+                            </div>
+                        </div>
+                        <div id="carousel-item-3" class="carousel-item carousel-item-3">
+                            <div class="carousel-item-content">
+                                <h2 class="carousel-item-content__title">Mycie Zewnętrzne</h2>
+                                <p class="carousel-item-content__text">Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                                <button class="carousel-item-content__link">Sprawdź naszą ofertę!</button>
+                            </div>
+                        </div>
+                        <div id="carousel-item-4" class="carousel-item carousel-item-4">
+                            <div class="carousel-item-content">
+                                <h2 class="carousel-item-content__title">Pranie Tapicerki</h2>
+                                <p class="carousel-item-content__text">Lorem ipsum dolor sit amet.</p>
+                                <button class="carousel-item-content__link">Sprawdź naszą ofertę!</button>
+                            </div>
+                        </div>
+                        <div id="carousel-item-5" class="carousel-item carousel-item-5">
+                            <div class="carousel-item-content">
+                                <h2 class="carousel-item-content__title">Odkurzanie Wnętrza</h2>
+                                <p class="carousel-item-content__text">Lorem ipsum dolor sit amet consectetur.</p>
+                                <button class="carousel-item-content__link">Sprawdź naszą ofertę!</button>
+                            </div>
+                        </div>
+                        <div id="carousel-item-6" class="carousel-item carousel-item-6">
+                            <div class="carousel-item-content">
+                                <h2 class="carousel-item-content__title">Obsługa Door 2 Door</h2>
+                                <p class="carousel-item-content__text">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit.
+                                    Modi,
+                                    quo?</p>
+                                <button class="carousel-item-content__link">Sprawdź naszą ofertę!</button>
+                            </div>
+                        </div>
+                        <div id="carousel-item-7" class="carousel-item carousel-item-7">
+                            <div class="carousel-item-content">
+                                <h2 class="carousel-item-content__title">Polerowanie lakieru oraz lamp</h2>
+                                <p class="carousel-item-content__text">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit.
+                                    Modi,
+                                    quo?</p>
+                                <button class="carousel-item-content__link">Sprawdź naszą ofertę!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-btns">
+                        <button id="left-arrow-button" class="arr-btn left-arr-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-circle-arrow-left-filled" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M12 2a10 10 0 0 1 .324 19.995l-.324 .005l-.324 -.005a10 10 0 0 1 .324 -19.995zm.707 5.293a1 1 0 0 0 -1.414 0l-4 4a1.048 1.048 0 0 0 -.083 .094l-.064 .092l-.052 .098l-.044 .11l-.03 .112l-.017 .126l-.003 .075l.004 .09l.007 .058l.025 .118l.035 .105l.054 .113l.043 .07l.071 .095l.054 .058l4 4l.094 .083a1 1 0 0 0 1.32 -1.497l-2.292 -2.293h5.585l.117 -.007a1 1 0 0 0 -.117 -1.993h-5.586l2.293 -2.293l.083 -.094a1 1 0 0 0 -.083 -1.32z"
+                                    stroke-width="0" fill="currentColor"></path>
+                            </svg>
+                        </button>
+                        <button id="carousel-btn-1" class="carousel-btn carousel-btn--active"></button>
+                        <button id="carousel-btn-2" class="carousel-btn"></button>
+                        <button id="carousel-btn-3" class="carousel-btn"></button>
+                        <button id="carousel-btn-4" class="carousel-btn"></button>
+                        <button id="carousel-btn-5" class="carousel-btn"></button>
+                        <button id="carousel-btn-6" class="carousel-btn"></button>
+                        <button id="carousel-btn-7" class="carousel-btn"></button>
+                        <button id="right-arrow-button" class="arr-btn right-arr-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-circle-arrow-right-filled" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M12 2l.324 .005a10 10 0 1 1 -.648 0l.324 -.005zm.613 5.21a1 1 0 0 0 -1.32 1.497l2.291 2.293h-5.584l-.117 .007a1 1 0 0 0 .117 1.993h5.584l-2.291 2.293l-.083 .094a1 1 0 0 0 1.497 1.32l4 -4l.073 -.082l.064 -.089l.062 -.113l.044 -.11l.03 -.112l.017 -.126l.003 -.075l-.007 -.118l-.029 -.148l-.035 -.105l-.054 -.113l-.071 -.111a1.008 1.008 0 0 0 -.097 -.112l-4 -4z"
+                                    stroke-width="0" fill="currentColor"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="main">
+        <div class="container">
+            <div class="wrapper">
+                <a class="take-me-up-arr">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M6 15l6 -6l6 6"></path>
+                    </svg>
+                </a>
+                <section id="section-about" class="about">
+                    <div class="about__content">
+                        <div class="about__content-text">
+                            <h2 class="about__title">Profesjonalnie umyjemy twoje auto!</h2>
+                            <p class="about__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus culpa officia eius!
+                                Reprehenderit eos mollitia distinctio sapiente cumque quia ab sunt tempore, tenetur
+                                ratione
+                                iusto necessitatibus a nostrum doloribus illo incidunt enim possimus hic repellat rem
+                                excepturi eligendi consequatur? Voluptate exercitationem nobis voluptates optio, id ea
+                                corrupti quam alias quidem.</p>
+                            <p class="about__call-us-text">Zadzwoń i umów mycie</p>
+                            <a href="" class="about__phone-number">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone"
+                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                                    </path>
+                                </svg>
+                                +48 123 456 789
+                            </a>
+                        </div>
+                        <img src="../dist/img/red-microfibre-mobile.webp" alt="" class="about__img">
+                    </div>
+                    <div class="about-icons-box">
+                        <div class="about-icon-box">
+                            <img src="../dist/img/icons8-effective-detergent-50.png" alt=""
+                                class="about-icon-box__icon">
+                            <h4 class="about-icon-box__title">Skuteczna chemia</h4>
+                            <p class="about-icon-box__description">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="about-icon-box">
+                            <img src="../dist/img/icons8-modern-equipment-50.png" alt="" class="about-icon-box__icon">
+                            <h4 class="about-icon-box__title">Nowoczesny sprzęt</h4>
+                            <p class="about-icon-box__description">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                elit.</p>
+                        </div>
+                        <div class="about-icon-box">
+                            <img src="../dist/img/icons8-car-detailing-50.png" alt="" class="about-icon-box__icon">
+                            <h4 class="about-icon-box__title">Dbałość o detale</h4>
+                            <p class="about-icon-box__description">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="section-what-to-offer" class="what-to-offer">
+                    <div class="what-to-offer__header">
+                        <h2 class="what-to-offer__header-title">Co oferujemy?</h2>
+                        <p class="what-to-offer__header-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eum provident ratione cumque perferendis obcaecati magni sed, nemo nam enim suscipit.</p>
+                    </div>
+                    <div class="what-to-offer__content">
+                        <a href="" class="what-to-offer__content-item">
+                            <img src="../dist/img/bmw-roof-mobile.webp" alt=""
+                                class="what-to-offer__content-item-img what-to-offer__content-item-img-1">
+                            <h3 class="what-to-offer__content-item-title">Mycie zewnętrzne</h3>
+                        </a>
+                        <a href="" class="what-to-offer__content-item">
+                            <img src="../dist/img/cleaning-inside.webp" alt=""
+                                class="what-to-offer__content-item-img what-to-offer__content-item-img-2">
+                            <h3 class="what-to-offer__content-item-title">Pranie tapicerki</h3>
+                        </a>
+                        <a href="" class="what-to-offer__content-item">
+                            <img src="../dist/img/polish-car-lamp.webp" alt=""
+                                class="what-to-offer__content-item-img what-to-offer__content-item-img-3">
+                            <h3 class="what-to-offer__content-item-title">Polerowanie lakieru oraz lamp</h3>
+                        </a>
+                        <a href="" class="what-to-offer__content-item">
+                            <img src="../dist/img/door-to-door-mobile.webp" alt=""
+                                class="what-to-offer__content-item-img what-to-offer__content-item-img-4">
+                            <h3 class="what-to-offer__content-item-title">Usługa Door 2 Door</h3>
+                        </a>
+                    </div>
+                </section>
+                <section id="section-washing-programs" class="washing-programs">
+                    <h2 class="washing-programs__title">Wybierz dopasowany program mycia</h2>
+                    <div class="washing-programs__btns">
+                        <button
+                            class="washing-programs__btns-single-btn washing-programs__btns-single-btn--active">HATCH,
+                            SEDAN, KOMBI</button>
+                        <button class="washing-programs__btns-single-btn">VAN, BUS, SUV <br>
+                            <span class="washing-programs__btns-single-btn-span">(max. 2,25m wysokości)</span></button>
+                    </div>
+                    <div class="washing-programs__cards">
+                        <div class="washing-programs__cards-single-card">
+                            <img src="../dist/img/sponge-foam-mobile.jpg" alt=""
+                                class="washing-programs__cards-single-card-img">
+                            <div class="washing-programs__cards-single-card-content">
+                                <div class="washing-programs__cards-single-card-content-top">
+                                    <p class="washing-programs__cards-single-card-content-top-price">cena</p>
+                                    <span class="washing-programs__cards-single-card-content-top-value">24 zł</span>
+                                </div>
+                                <div class="washing-programs__cards-single-card-content-bot">
+                                    <h4 class="washing-programs__cards-single-card-content-bot-title">PROGRAM 1</h4>
+                                    <a href="" class="washing-programs__cards-single-card-content-bot-order">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-phone" width="22" height="22"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                                            </path>
+                                        </svg>
+                                        Wybieram
+                                    </a>
+                                    <div class="washing-programs__cards-single-card-content-bot-list-box">
+                                        <ul class="washing-programs__cards-single-card-content-bot-list-box-ul">
+                                            <li class="washing-programs__cards-single-card-content-bot-list-box-ul-item">Mycie wstępne</li>
+                                            <li class="washing-programs__cards-single-card-content-bot-list-box-ul-item">Aktywna piana</li>
+                                            <li class="washing-programs__cards-single-card-content-bot-list-box-ul-item">Woskowanie</li>
+                                            <li class="washing-programs__cards-single-card-content-bot-list-box-ul-item">Suszenie</li>
+                                        </ul>
+                                        <ul class="washing-programs__cards-single-card-content-bot-list-box-ul">
+                                            <!-- <li class="washing-programs__cards-single-card-content-bot-list-box-ul-item">Mycie wstępne</li>
+                                            <li class="washing-programs__cards-single-card-content-bot-list-box-ul-item">Aktywna piana</li>
+                                            <li class="washing-programs__cards-single-card-content-bot-list-box-ul-item">Woskowanie</li>
+                                            <li class="washing-programs__cards-single-card-content-bot-list-box-ul-item">Suszenie</li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- <span>26 (29) zł</span>
+                        <h4>Program 2</h4>
+                        <ul>
+                            <li>Mycie wstępne</li>
+                            <li>Aktywna piana</li>
+                            <li>Mycie felg</li>
+                            <li>Mycie Podwozia</li>
+                            <li>Woskowanie</li>
+                            <li>Suszenie</li>
+                        </ul>
+                        <span>28 (31) zł</span>
+                        <h4>Program 3</h4>
+                        <ul>
+                            <li>Mycie wstępne</li>
+                            <li>Aktywna piana</li>
+                            <li>Mycie felg</li>
+                            <li>Mycie Podwozia</li>
+                            <li>Szampon</li>
+                            <li>Woskowanie</li>
+                            <li>Suszenie</li>
+                        </ul>
+                        <span>30 (33) zł</span>
+                        <h4>Program 4</h4>
+                        <ul>
+                            <li>Mycie wstępne</li>
+                            <li>Aktywna piana</li>
+                            <li>Mycie felg</li>
+                            <li>Mycie Podwozia</li>
+                            <li>Szampon</li>
+                            <li>OMNI</li>
+                            <li>Woskowanie</li>
+                            <li>Suszenie</li>
+                        </ul>
+                        <span>32 (35) zł</span>
+                        <h4>Program 5</h4>
+                        <ul>
+                            <li>Mycie wstępne</li>
+                            <li>Aktywna piana</li>
+                            <li>Mycie felg</li>
+                            <li>Mycie Podwozia</li>
+                            <li>Szampon</li>
+                            <li>OMNI</li>
+                            <li>Szampon</li>
+                            <li>Deszczownia</li>
+                            <li>Woskowanie</li>
+                            <li>Suszenie</li>
+                        </ul> -->
+                    </div>
+                    <p>*Busy ponad wysokość 2,25 : Wycena mycia lub sprzątania na miejscu.</p>
+                    <h2>Dodatkowo każdy program można poszerzyć o:</h2>
+                    <table>
+                        <tr>
+                            <th>Usługa</th>
+                            <th>Cena</th>
+                        </tr>
+                        <tr>
+                            <td>Mycie szyb</td>
+                            <td>25 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Odkurzanie wnętrza</td>
+                            <td>25 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Odkurzanie bagażnika</td>
+                            <td>13 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Mycie gum, Czyszczenie dywaników</td>
+                            <td>2zł / szt</td>
+                        </tr>
+                        <tr>
+                            <td>Konserwacja plastików wewnątrz auta</td>
+                            <td>20 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Czyszczenie plastików wewnątrz auta</td>
+                            <td>20 zł</td>
+                        </tr>
+                        <tr>
+                            <td>Nabłyszczanie opon</td>
+                            <td>8 zł</td>
+                        </tr>
+                    </table>
+                    <img src="" alt="">
+                    <p>*Wycena sprzątania busów odbywa się na miejscu. Za dodatkowe
+                        zabrudzenia typu sierść lub nadmiar piasku bądź dodatkowe
+                        nabłyszczanie doliczana jest dodatkowa opłata.</p>
+                </section>
+                <section id="section-washing-upholstery-polish-up" class="washing-upholstery-polish-up"></section>
+                <section id="section-door-2-door" class="door-2-door"></section>
+                <section id="section-how-to-order" class="how-to-order"></section>
+                <section id="section-gallery" class="gallery"></section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="wrapper"></div>
+        </div>
+        <!-- icons by tabler-icons.io and icons8.com -->
+        <!-- <a target="_blank" href="https://icons8.com/icon/FvEIFumk9aeO/car-wash">Car Wash</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+    </footer>
+    <script src="../dist/js/main.min.js"></script>
 </body>
 
 </html>
