@@ -531,12 +531,12 @@ button {
 				border-radius: 20px;
 
 				&--active {
-					color: $text-on-dark;
-					background-color: $bgc-cta2;
-					border: 2px solid $bgc-cta;
-					// color: rgb(255,255,255);
-					// background-color: rgb(100, 150, 200);
-					// border: 3px solid rgb(60, 100, 200);
+					// color: $text-on-dark;
+					// background-color: $bgc-cta2;
+					// border: 2px solid $bgc-cta;
+					color: $color-cta;
+					background-color: $bgc-cta3;
+					border: 3px solid $bgc-cta4;
 				}
 
 				&-span {
@@ -548,9 +548,11 @@ button {
 		&__cards {
 			display: flex;
 			justify-content: center;
+			flex-wrap: wrap;
 
 			&-single-card {
 				position: relative;
+				margin-bottom: 1rem;
 				height: 40rem;
 				width: 30rem;
 				border: 2px solid #ddd;
@@ -638,6 +640,11 @@ button {
 
 								&-item {
 									line-height: 2rem;
+
+									&--highlight {
+										line-height: 2rem;
+										font-weight: 600;
+									}
 								}
 							}
 						}
