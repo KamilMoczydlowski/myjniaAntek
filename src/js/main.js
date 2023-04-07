@@ -3,7 +3,7 @@ const burgerBtn = document.getElementById('burger-btn');
 const burgerMidBar = document.getElementById('burger-mid-bar');
 const nav = document.getElementById('nav');
 
-//carousel carousel-btn--active
+//carousel
 const carouselFilm = document.getElementById('carousel-film');
 const leftArrBtn = document.getElementById('left-arrow-button');
 const rightArrBtn = document.getElementById('right-arrow-button');
@@ -26,7 +26,25 @@ const carouselBtnsArr = [
 	carouselBtn7,
 ];
 
+// washing programs
+const hatchBtn = document.getElementById('hatch-sedan-kombi-btn');
+const vanBtn = document.getElementById('van-bus-suv-btn');
+const price1Span = document.getElementById('program-1-price');
+const price2Span = document.getElementById('program-2-price');
+const price3Span = document.getElementById('program-3-price');
+const price4Span = document.getElementById('program-4-price');
+const price5Span = document.getElementById('program-5-price');
+
+// zip
+const textBefore = document.getElementById('text-before');
+const textAfter = document.getElementById('text-after');
+const btn = document.getElementById('arr-btn');
+const window1 = document.getElementById('window-before');
+const window2 = document.getElementById('window-after');
+
 let carouselNum = 1;
+
+// burger btn handler
 
 const handleBurgerBtn = () => {
 	burgerMidBar.classList.toggle('top-bar__burger-btn-mid-bar--none');
@@ -34,6 +52,8 @@ const handleBurgerBtn = () => {
 	burgerBtn.classList.toggle('rotateAfter');
 	nav.classList.toggle('nav--show');
 };
+
+// header carousel
 
 const carouselToTheRight = () => {
 	if (carouselNum < 7) {
@@ -98,7 +118,7 @@ const carouselLeftArrHandle = () => {
 };
 
 const takeMeToPicture = carouselNum => {
-	carouselBtnsArr.forEach(item => item.classList.remove('carousel-btn--active'))
+	carouselBtnsArr.forEach(item => item.classList.remove('carousel-btn--active'));
 
 	carouselFilm.style = `left: -${carouselNum - 1}00%`;
 
@@ -137,6 +157,74 @@ const takeMeTo7thPicture = () => {
 	takeMeToPicture(carouselNum);
 };
 
+// washing programs btn handlers
+
+const changePriceHandler = (price1, price2, price3, price4, price5) => {
+	price1Span.innerHTML = `${price1} zł`;
+	price2Span.innerHTML = `${price2} zł`;
+	price3Span.innerHTML = `${price3} zł`;
+	price4Span.innerHTML = `${price4} zł`;
+	price5Span.innerHTML = `${price5} zł`;
+};
+
+const hatchBtnHandler = () => {
+	hatchBtn.classList.add('washing-programs__btns-single-btn--active');
+	vanBtn.classList.remove('washing-programs__btns-single-btn--active');
+	changePriceHandler(24, 26, 28, 30, 32);
+};
+
+const vanBtnHandler = () => {
+	vanBtn.classList.add('washing-programs__btns-single-btn--active');
+	hatchBtn.classList.remove('washing-programs__btns-single-btn--active');
+	changePriceHandler(27, 29, 31, 33, 35);
+};
+
+// zip handle
+
+const widthOfBox = () => {
+	let width;
+	if (window.innerWidth < 500) {
+		width = window.innerWidth;
+	} else {
+		width = 500;
+	}
+	return width;
+};
+
+const gap = () => (window.innerWidth - widthOfBox()) / 2;
+
+// zip handle % version
+
+const mousemoveHandler = () => {
+	const width = widthOfBox();
+	const xValue = event.pageX;
+
+	const calcPerc = () => {
+		const result = ((xValue - gap()) / width) * 100;
+		return result;
+	};
+
+	const calcOpacityBefore = () => {
+		const result = (xValue - gap()) / width;
+		return result;
+	};
+
+	const calcOpacityAfter = () => {
+		const result = (width + gap() - xValue) / width;
+		return result;
+	};
+
+	if (calcPerc() > 0 && calcPerc() < 100) {
+		window2.style.left = `${calcPerc()}%`;
+		btn.style.left = `${calcPerc()}%`;
+
+		textBefore.style.opacity = calcOpacityBefore();
+		textAfter.style.opacity = calcOpacityAfter();
+	}
+};
+
+// listeners
+
 burgerBtn.addEventListener('click', handleBurgerBtn);
 rightArrBtn.addEventListener('click', carouselRightArrHandle);
 leftArrBtn.addEventListener('click', carouselLeftArrHandle);
@@ -148,3 +236,20 @@ carouselBtn4.addEventListener('click', takeMeTo4thPicture);
 carouselBtn5.addEventListener('click', takeMeTo5thPicture);
 carouselBtn6.addEventListener('click', takeMeTo6thPicture);
 carouselBtn7.addEventListener('click', takeMeTo7thPicture);
+
+hatchBtn.addEventListener('click', hatchBtnHandler);
+vanBtn.addEventListener('click', vanBtnHandler);
+
+btn.addEventListener('mousedown', () => {
+	document.addEventListener('mousemove', mousemoveHandler);
+});
+btn.addEventListener('touchstart', () => {
+	document.addEventListener('touchmove', mousemoveHandler);
+});
+
+document.addEventListener('mouseup', () => {
+	document.removeEventListener('mousemove', mousemoveHandler);
+});
+document.addEventListener('touchend', () => {
+	document.removeEventListener('touchmove', mousemoveHandler);
+});

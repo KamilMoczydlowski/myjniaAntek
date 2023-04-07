@@ -114,7 +114,7 @@
                     <div class="carousel-btns">
                         <button id="left-arrow-button" class="arr-btn left-arr-btn">
                             <svg xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-circle-arrow-left-filled" width="24" height="24"
+                                class="icon icon-tabler icon-tabler-circle-arrow-left-filled" width="30" height="30"
                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -132,7 +132,7 @@
                         <button id="carousel-btn-7" class="carousel-btn"></button>
                         <button id="right-arrow-button" class="arr-btn right-arr-btn">
                             <svg xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-circle-arrow-right-filled" width="24" height="24"
+                                class="icon icon-tabler icon-tabler-circle-arrow-right-filled" width="30" height="30"
                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -150,14 +150,6 @@
     <main class="main">
         <div class="container">
             <div class="wrapper">
-                <a class="take-me-up-arr">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up" width="24"
-                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M6 15l6 -6l6 6"></path>
-                    </svg>
-                </a>
                 <section id="section-about" class="about">
                     <div class="about__content">
                         <div class="about__content-text">
@@ -212,22 +204,22 @@
                             Eum provident ratione cumque perferendis obcaecati magni sed, nemo nam enim suscipit.</p>
                     </div>
                     <div class="what-to-offer__content">
-                        <a href="" class="what-to-offer__content-item">
+                        <a href="#section-washing-programs" class="what-to-offer__content-item">
                             <img src="../dist/img/bmw-roof-mobile.webp" alt=""
                                 class="what-to-offer__content-item-img what-to-offer__content-item-img-1">
                             <h3 class="what-to-offer__content-item-title">Mycie zewnętrzne</h3>
                         </a>
-                        <a href="" class="what-to-offer__content-item">
+                        <a href="#section-washing-upholstery-polish-up" class="what-to-offer__content-item">
                             <img src="../dist/img/cleaning-inside.webp" alt=""
                                 class="what-to-offer__content-item-img what-to-offer__content-item-img-2">
                             <h3 class="what-to-offer__content-item-title">Pranie tapicerki</h3>
                         </a>
-                        <a href="" class="what-to-offer__content-item">
+                        <a href="#section-washing-upholstery-polish-up" class="what-to-offer__content-item">
                             <img src="../dist/img/polish-car-lamp.webp" alt=""
                                 class="what-to-offer__content-item-img what-to-offer__content-item-img-3">
                             <h3 class="what-to-offer__content-item-title">Polerowanie lakieru oraz lamp</h3>
                         </a>
-                        <a href="" class="what-to-offer__content-item">
+                        <a href="#section-door-2-door" class="what-to-offer__content-item">
                             <img src="../dist/img/door-to-door-mobile.webp" alt=""
                                 class="what-to-offer__content-item-img what-to-offer__content-item-img-4">
                             <h3 class="what-to-offer__content-item-title">Usługa Door 2 Door</h3>
@@ -235,12 +227,12 @@
                     </div>
                 </section>
                 <section id="section-washing-programs" class="washing-programs">
-                    <h2 class="washing-programs__title">Wybierz dopasowany program mycia</h2>
+                    <h2 class="washing-programs__title">Zamów dopasowany program mycia</h2>
                     <div class="washing-programs__btns">
-                        <button
+                        <button id="hatch-sedan-kombi-btn"
                             class="washing-programs__btns-single-btn washing-programs__btns-single-btn--active">HATCH,
                             SEDAN, KOMBI</button>
-                        <button class="washing-programs__btns-single-btn">VAN, BUS, SUV <br>
+                        <button id="van-bus-suv-btn" class="washing-programs__btns-single-btn">VAN, BUS, SUV <br>
                             <span class="washing-programs__btns-single-btn-span">(max. 2,25m wysokości)</span></button>
                     </div>
                     <div class="washing-programs__cards">
@@ -250,10 +242,10 @@
                             <div class="washing-programs__cards-single-card-content">
                                 <div class="washing-programs__cards-single-card-content-top">
                                     <p class="washing-programs__cards-single-card-content-top-price">cena</p>
-                                    <span class="washing-programs__cards-single-card-content-top-value">24 zł</span>
+                                    <span id="program-1-price" class="washing-programs__cards-single-card-content-top-value">24 zł</span>
                                 </div>
                                 <div class="washing-programs__cards-single-card-content-bot">
-                                    <h4 class="washing-programs__cards-single-card-content-bot-title">PROGRAM 1</h4>
+                                    <h3 class="washing-programs__cards-single-card-content-bot-title">PROGRAM 1</h3>
                                     <a href="" class="washing-programs__cards-single-card-content-bot-order">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-phone" width="22" height="22"
@@ -264,7 +256,7 @@
                                                 d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
                                             </path>
                                         </svg>
-                                        Wybieram
+                                        Zamawiam
                                     </a>
                                     <div class="washing-programs__cards-single-card-content-bot-list-box">
                                         <ul class="washing-programs__cards-single-card-content-bot-list-box-ul">
@@ -292,10 +284,10 @@
                             <div class="washing-programs__cards-single-card-content">
                                 <div class="washing-programs__cards-single-card-content-top">
                                     <p class="washing-programs__cards-single-card-content-top-price">cena</p>
-                                    <span class="washing-programs__cards-single-card-content-top-value">26 zł</span>
+                                    <span id="program-2-price" class="washing-programs__cards-single-card-content-top-value">26 zł</span>
                                 </div>
                                 <div class="washing-programs__cards-single-card-content-bot">
-                                    <h4 class="washing-programs__cards-single-card-content-bot-title">PROGRAM 2</h4>
+                                    <h3 class="washing-programs__cards-single-card-content-bot-title">PROGRAM 2</h3>
                                     <a href="" class="washing-programs__cards-single-card-content-bot-order">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-phone" width="22" height="22"
@@ -306,7 +298,7 @@
                                                 d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
                                             </path>
                                         </svg>
-                                        Wybieram
+                                        Zamawiam
                                     </a>
                                     <div class="washing-programs__cards-single-card-content-bot-list-box">
                                         <ul class="washing-programs__cards-single-card-content-bot-list-box-ul">
@@ -341,10 +333,10 @@
                             <div class="washing-programs__cards-single-card-content">
                                 <div class="washing-programs__cards-single-card-content-top">
                                     <p class="washing-programs__cards-single-card-content-top-price">cena</p>
-                                    <span class="washing-programs__cards-single-card-content-top-value">28 zł</span>
+                                    <span id="program-3-price" class="washing-programs__cards-single-card-content-top-value">28 zł</span>
                                 </div>
                                 <div class="washing-programs__cards-single-card-content-bot">
-                                    <h4 class="washing-programs__cards-single-card-content-bot-title">PROGRAM 3</h4>
+                                    <h3 class="washing-programs__cards-single-card-content-bot-title">PROGRAM 3</h3>
                                     <a href="" class="washing-programs__cards-single-card-content-bot-order">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-phone" width="22" height="22"
@@ -355,7 +347,7 @@
                                                 d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
                                             </path>
                                         </svg>
-                                        Wybieram
+                                        Zamawiam
                                     </a>
                                     <div class="washing-programs__cards-single-card-content-bot-list-box">
                                         <ul class="washing-programs__cards-single-card-content-bot-list-box-ul">
@@ -392,10 +384,10 @@
                             <div class="washing-programs__cards-single-card-content">
                                 <div class="washing-programs__cards-single-card-content-top">
                                     <p class="washing-programs__cards-single-card-content-top-price">cena</p>
-                                    <span class="washing-programs__cards-single-card-content-top-value">30 zł</span>
+                                    <span id="program-4-price" class="washing-programs__cards-single-card-content-top-value">30 zł</span>
                                 </div>
                                 <div class="washing-programs__cards-single-card-content-bot">
-                                    <h4 class="washing-programs__cards-single-card-content-bot-title">PROGRAM 4</h4>
+                                    <h3 class="washing-programs__cards-single-card-content-bot-title">PROGRAM 4</h3>
                                     <a href="" class="washing-programs__cards-single-card-content-bot-order">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-phone" width="22" height="22"
@@ -406,7 +398,7 @@
                                                 d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
                                             </path>
                                         </svg>
-                                        Wybieram
+                                        Zamawiam
                                     </a>
                                     <div class="washing-programs__cards-single-card-content-bot-list-box">
                                         <ul class="washing-programs__cards-single-card-content-bot-list-box-ul">
@@ -446,10 +438,10 @@
                             <div class="washing-programs__cards-single-card-content">
                                 <div class="washing-programs__cards-single-card-content-top">
                                     <p class="washing-programs__cards-single-card-content-top-price">cena</p>
-                                    <span class="washing-programs__cards-single-card-content-top-value">32 zł</span>
+                                    <span id="program-5-price" class="washing-programs__cards-single-card-content-top-value">32 zł</span>
                                 </div>
                                 <div class="washing-programs__cards-single-card-content-bot">
-                                    <h4 class="washing-programs__cards-single-card-content-bot-title">PROGRAM 5</h4>
+                                    <h3 class="washing-programs__cards-single-card-content-bot-title">PROGRAM 5</h3>
                                     <a href="" class="washing-programs__cards-single-card-content-bot-order">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-phone" width="22" height="22"
@@ -460,7 +452,7 @@
                                                 d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
                                             </path>
                                         </svg>
-                                        Wybieram
+                                        Zamawiam
                                     </a>
                                     <div class="washing-programs__cards-single-card-content-bot-list-box">
                                         <ul class="washing-programs__cards-single-card-content-bot-list-box-ul">
@@ -486,7 +478,7 @@
                                                 Mycie podwozia</li>
                                             <li
                                                 class="washing-programs__cards-single-card-content-bot-list-box-ul-item--highlight">
-                                                Szampon</li>
+                                                Szampon x2</li>
                                             <li
                                                 class="washing-programs__cards-single-card-content-bot-list-box-ul-item--highlight">
                                                 OMNI</li>
@@ -499,50 +491,259 @@
                             </div>
                         </div>
                     </div>
-                    <p>*Busy ponad wysokość 2,25 : Wycena mycia lub sprzątania na miejscu.</p>
-                    <h2>Dodatkowo każdy program można poszerzyć o:</h2>
-                    <table>
-                        <tr>
-                            <th>Usługa</th>
-                            <th>Cena</th>
-                        </tr>
-                        <tr>
-                            <td>Mycie szyb</td>
-                            <td>25 zł</td>
-                        </tr>
-                        <tr>
-                            <td>Odkurzanie wnętrza</td>
-                            <td>25 zł</td>
-                        </tr>
-                        <tr>
-                            <td>Odkurzanie bagażnika</td>
-                            <td>13 zł</td>
-                        </tr>
-                        <tr>
-                            <td>Mycie gum, Czyszczenie dywaników</td>
-                            <td>2zł / szt</td>
-                        </tr>
-                        <tr>
-                            <td>Konserwacja plastików wewnątrz auta</td>
-                            <td>20 zł</td>
-                        </tr>
-                        <tr>
-                            <td>Czyszczenie plastików wewnątrz auta</td>
-                            <td>20 zł</td>
-                        </tr>
-                        <tr>
-                            <td>Nabłyszczanie opon</td>
-                            <td>8 zł</td>
-                        </tr>
-                    </table>
-                    <img src="" alt="">
-                    <p>*Wycena sprzątania busów odbywa się na miejscu. Za dodatkowe
+                    <p class="washing-programs__star-info">*Busy ponad wysokość 2,25 : Wycena mycia lub sprzątania na
+                        miejscu.</p>
+                    <div class="washing-programs__extend-offer">
+                        <h3 class="washing-programs__extend-offer-title">Dodatkowo każdy program można poszerzyć o:</h3>
+                        <div class="washing-programs__extend-offer-content">
+                            <img src="../dist/img/cleaning-mobile.webp" alt="" class="washing-programs__extend-offer-content-img">
+                            <table class="washing-programs__extend-offer-content-table">
+                                <tr class="washing-programs__extend-offer-content-table-row">
+                                    <th class="washing-programs__extend-offer-content-table-row-header">Usługa</th>
+                                    <th class="washing-programs__extend-offer-content-table-row-header">Cena</th>
+                                </tr>
+                                <tr class="washing-programs__extend-offer-content-table-row">
+                                    <td class="washing-programs__extend-offer-content-table-row-cell-name">Mycie szyb
+                                    </td>
+                                    <td class="washing-programs__extend-offer-content-table-row-cell-price">25 zł</td>
+                                </tr>
+                                <tr class="washing-programs__extend-offer-content-table-row">
+                                    <td class="washing-programs__extend-offer-content-table-row-cell-name">Odkurzanie
+                                        wnętrza
+                                    </td>
+                                    <td class="washing-programs__extend-offer-content-table-row-cell-price">25 zł</td>
+                                </tr>
+                                <tr class="washing-programs__extend-offer-content-table-row">
+                                    <td class="washing-programs__extend-offer-content-table-row-cell-name">Odkurzanie
+                                        bagażnika</td>
+                                    <td class="washing-programs__extend-offer-content-table-row-cell-price">13 zł</td>
+                                </tr>
+                                <tr class="washing-programs__extend-offer-content-table-row">
+                                    <td class="washing-programs__extend-offer-content-table-row-cell-name">Mycie gum,
+                                        Czyszczenie
+                                        dywaników</td>
+                                    <td class="washing-programs__extend-offer-content-table-row-cell-price">2zł / szt
+                                    </td>
+                                </tr>
+                                <tr class="washing-programs__extend-offer-content-table-row">
+                                    <td class="washing-programs__extend-offer-content-table-row-cell-name">Konserwacja
+                                        plastików wewnątrz
+                                        auta</td>
+                                    <td class="washing-programs__extend-offer-content-table-row-cell-price">20 zł</td>
+                                </tr>
+                                <tr class="washing-programs__extend-offer-content-table-row">
+                                    <td class="washing-programs__extend-offer-content-table-row-cell-name">Czyszczenie
+                                        plastików wewnątrz
+                                        auta</td>
+                                    <td class="washing-programs__extend-offer-content-table-row-cell-price">20 zł</td>
+                                </tr>
+                                <tr class="washing-programs__extend-offer-content-table-row">
+                                    <td class="washing-programs__extend-offer-content-table-row-cell-name">Nabłyszczanie
+                                        opon
+                                    </td>
+                                    <td class="washing-programs__extend-offer-content-table-row-cell-price">8 zł</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <p class="washing-programs__star-info">*Wycena sprzątania busów odbywa się na miejscu. Za dodatkowe
                         zabrudzenia typu sierść lub nadmiar piasku bądź dodatkowe
                         nabłyszczanie doliczana jest dodatkowa opłata.</p>
                 </section>
-                <section id="section-washing-upholstery-polish-up" class="washing-upholstery-polish-up"></section>
+                <section id="section-washing-upholstery-polish-up" class="washing-upholstery-polish-up">
+                    <div class="washing-upholstery">
+                        <div class="washing-upholstery__compare">
+                            <div class="washing-upholstery__compare-header">
+                                <h2 class="washing-upholstery__compare-header-title">Pranie tapicerki</h2>
+                                <button class="washing-upholstery__compare-header-btn">Polerowanie lakieru</button>
+                            </div>
+                            <div class="washing-upholstery__compare-content">
+                                <div class="washing-upholstery__compare-content-description">
+                                    <h3 class="washing-upholstery__compare-content-description-title">Kompleksowe
+                                        czyszczenie tapicerki samochodowej</h3>
+                                    <p class="washing-upholstery__compare-content-description-text">Dzięki kompleksowemu
+                                        czyszczenie tapicerki jesteśmy w stanie skutecznie
+                                        zlikwidowac brud
+                                        oraz plamy powstałe na materiale dzięki czemu otrzymujemy czystą, świeżą i
+                                        pachnącą
+                                        tapicerkę. Pierzemy fotele, kanapy, boczki w drzwiach , umyjemy wnętrze
+                                        bagażnika.
+                                    </p>
+                                    <a href="" class="washing-upholstery__compare-content-description-order">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-phone" width="22" height="22"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                                            </path>
+                                        </svg>
+                                        Zamawiam</a>
+                                </div>
+                                <div class="washing-upholstery__compare-content-zip">
+                                    <p id="text-before" class="washing-upholstery__compare-content-zip-text-before">
+                                        PRZED</p>
+                                    <div class="washing-upholstery__compare-content-zip-window">
+                                        <div id='window-before'
+                                            class="washing-upholstery__compare-content-zip-window-before">
+                                        </div>
+                                        <!-- <img src="../dist/img/lamp-before-2.webp" alt=""
+                                            class="washing-upholstery__compare-content-zip-window-before-img"> -->
+                                        <div id="window-after"
+                                            class="washing-upholstery__compare-content-zip-window-after">
+                                        </div>
+                                        <!-- <img src="../dist/img/lamp-after-2.webp" alt=""
+                                            class="washing-upholstery__compare-content-zip-window-after-img"> -->
+                                        <button id="arr-btn" class="washing-upholstery__compare-content-zip-window-btn">
+                                            <div class="washing-upholstery__compare-content-zip-window-btn-arr">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-chevron-left" width="24"
+                                                    height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M15 6l-6 6l6 6"></path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-chevron-right" width="24"
+                                                    height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M9 6l6 6l-6 6"></path>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <p id="text-after" class="washing-upholstery__compare-content-zip-text-after">PO</p>
+                                </div>
+                                <div class="washing-upholstery__compare-content-icons">
+                                    <div class="washing-upholstery__compare-content-icons-box">
+                                        <img src="../dist/img/icons8-eko-detergent-50.png" alt=""
+                                            class="washing-upholstery__compare-content-icons-box-icon">
+                                        <div class="washing-upholstery__compare-content-icons-box-description">
+                                            <h4 class="washing-upholstery__compare-content-icons-box-description-title">
+                                                Chemia bezpieczna dla środowiska</h4>
+                                            <p class="washing-upholstery__compare-content-icons-box-description-text">
+                                                Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                    </div>
+                                    <div class="washing-upholstery__compare-content-icons-box">
+                                        <img src="../dist/img/icons8-safe-for-leather-and-fabrics-50.png" alt=""
+                                            class="washing-upholstery__compare-content-icons-box-icon">
+                                        <div class="washing-upholstery__compare-content-icons-box-description">
+                                            <h4 class="washing-upholstery__compare-content-icons-box-description-title">
+                                                Chemia bezpieczna dla środowiska</h4>
+                                            <p class="washing-upholstery__compare-content-icons-box-description-text">
+                                                Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                    </div>
+                                    <div class="washing-upholstery__compare-content-icons-box">
+                                        <img src="../dist/img/icons8-natural-aroma-50.png" alt=""
+                                            class="washing-upholstery__compare-content-icons-box-icon">
+                                        <div class="washing-upholstery__compare-content-icons-box-description">
+                                            <h4 class="washing-upholstery__compare-content-icons-box-description-title">
+                                                Chemia bezpieczna dla środowiska</h4>
+                                            <p class="washing-upholstery__compare-content-icons-box-description-text">
+                                                Lorem ipsum dolor sit amet consectetur.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="washing-upholstery__step-by-step">
+                            <h3 class="washing-upholstery__step-by-step-title">Pranie tapicerki - krok po kroku</h3>
+                            <div class="washing-upholstery__step-by-step-content">
+                                <div class="washing-upholstery__step-by-step-content-box">
+                                    <div class="washing-upholstery__step-by-step-content-box-description">
+                                        <h4 class="washing-upholstery__step-by-step-content-box-description-title">
+                                            Wstępne odkurzanie</h4>
+                                        <p class="washing-upholstery__step-by-step-content-box-description-text">
+                                            Wydmuchujemy sprężonym powietrzem ciężko dostępne miejsca w pojeździe
+                                            (przestrzenie między fotelami, małe schowki , okruszki w zagięciach foteli).
+                                            Wiele zanieczyszczeń to nie tylko przypadkowe plamy po kawie lub innym
+                                            napoju, dlatego bardzo dokładnie odkurzamy wnętrze samochodu. Usuwamy w ten
+                                            sposób kurz, paprochy, sierść, która wplata się we włókna tapicerki,
+                                            okruszki jedzenia i inne drobne elementy.
+                                        </p>
+                                    </div>
+                                    <div class="washing-upholstery__step-by-step-content-box-description">
+                                        <h4 class="washing-upholstery__step-by-step-content-box-description-title">
+                                            Usunięcie ciężkich zabruzeń</h4>
+                                        <p class="washing-upholstery__step-by-step-content-box-description-text">Po
+                                            przeprowadzeniu wstępnego odkurzania usuwamy ciężkie zabrudzenia takie jak :
+                                            Gumy do żucia, różnego rodzaju plamy z oleistych substancji itp.
+                                        </p>
+                                    </div>
+                                    <div class="washing-upholstery__step-by-step-content-box-description">
+                                        <h4 class="washing-upholstery__step-by-step-content-box-description-title">
+                                            Zabezpieczenie wrażliwych elementów</h4>
+                                        <p class="washing-upholstery__step-by-step-content-box-description-text">
+                                            Zabezpieczamy elementy wrażliwe na wilgoć.</p>
+                                    </div>
+                                    <div class="washing-upholstery__step-by-step-content-box-description">
+                                        <h4 class="washing-upholstery__step-by-step-content-box-description-title">
+                                            Ocena poziomu zabrudzeń</h4>
+                                        <p class="washing-upholstery__step-by-step-content-box-description-text">
+                                            Pracownik ocenia poziom zabrudzenia i na tej podstawie dobiera odpowiednie
+                                            środki chemiczne.</p>
+                                    </div>
+                                </div>
+                                <img src="" alt="" class="washing-upholstery__step-by-step-content-img">
+                                <div class="washing-upholstery__step-by-step-content-box">
+
+                                    <div class="washing-upholstery__step-by-step-content-box-description">
+                                        <h4 class="washing-upholstery__step-by-step-content-box-description-title">
+                                            Pranie foteli i kanapy</h4>
+                                        <p class="washing-upholstery__step-by-step-content-box-description-text">
+                                            Tapicerka zostaje pokryta specjalnym środkiem
+                                            rozpuszczającym zabrudzenia oraz zmiękczającym tapicerkę. Po paru minutach,
+                                            Przystępujemy do procesu prania. Solidnie szorujemy materiał, by pozbyć
+                                            sie z niego zanieczyszczeń, następnie używamy specjalistycznego sprzętu do
+                                            odsysania środka piorącego wraz z zabrudzeniami. po zakończeniu prania tapicerka jest
+                                            czysta i ma świeży zapach, ale jest też jeszcze nieco wilgotna
+                                            (powierzchnia szybko wysycha sama). W dalszej kolejności pierzemy w ten sam
+                                            sposób wykładziny pojazdu, bagażnik, tapicerkę boczną wraz z elementami
+                                            plastikowymi.
+                                        </p>
+                                    </div>
+                                    <div class="washing-upholstery__step-by-step-content-box-description">
+                                        <h4 class="washing-upholstery__step-by-step-content-box-description-title">
+                                            Kontrola jakości</h4>
+                                        <p class="washing-upholstery__step-by-step-content-box-description-text">
+                                            Kontrola jakości prania i uzyskanych efektów (ewentualne poprawy).
+                                            Na życzenie klienta pierzemy również inne elementy wnętrza samochodu np.
+                                            Progi, słupki, pasy, schowki, deska rozdzielcza/kokpit, kierownica itd.
+                                        </p>
+                                    </div>
+                                    <div class="washing-upholstery__step-by-step-content-box-description">
+                                        <h4 class="washing-upholstery__step-by-step-content-box-description-title">
+                                            Oddanie pojazdu</h4>
+                                        <p class="washing-upholstery__step-by-step-content-box-description-text">
+                                            Jeśli samochód przejdzie kontrole jakości auto jest oddawane. Zwracamy uwagę
+                                            na proces odsysania wody z tapicerki który może pozostawić oczyszczoną
+                                            powierzchnie lekko wilgotną.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section id="section-door-2-door" class="door-2-door"></section>
-                <section id="section-how-to-order" class="how-to-order"></section>
+                <section id="section-how-to-order" class="how-to-order">
+                    <img src="" alt="">
+                    <h2></h2>
+                    <div>
+                        <div>
+                            <span></span>
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </section>
                 <section id="section-gallery" class="gallery"></section>
             </div>
         </div>
