@@ -2,6 +2,9 @@
 const burgerBtn = document.getElementById('burger-btn');
 const burgerMidBar = document.getElementById('burger-mid-bar');
 const nav = document.getElementById('nav');
+const allNavLinks = document.querySelectorAll('.nav-list__item-link')
+const linkToUpholstery = document.getElementById('nav-link-washing-upholstery')
+const linkToPolishUp = document.getElementById('nav-link-polish-up')
 
 //carousel
 const carouselFilm = document.getElementById('carousel-film');
@@ -35,19 +38,31 @@ const price3Span = document.getElementById('program-3-price');
 const price4Span = document.getElementById('program-4-price');
 const price5Span = document.getElementById('program-5-price');
 
+// washing / polish section
+
+const upholsteryPolishUpCarousel = document.getElementById('washing-upholstery-polish-up-carousel')
+const washingUpholsteryBtn = document.getElementById(
+	'washing-upholstery-header-btn'
+);
+const polishUpBtn = document.getElementById('polish-up-header-btn');
+
 // zip
-const textBefore = document.getElementById('text-before');
-const textAfter = document.getElementById('text-after');
-const btn = document.getElementById('arr-btn');
-const window1 = document.getElementById('window-before');
-const window2 = document.getElementById('window-after');
+const upholsteryTextBefore = document.getElementById('upholstery-text-before');
+const upholsteryTextAfter = document.getElementById('upholstery-text-after');
+const upholsteryBtn = document.getElementById('upholstery-arr-btn');
+const upholsteryWindow2 = document.getElementById('upholstery-window-after');
+
+const polishTextBefore = document.getElementById('polish-up-text-before');
+const polishTextAfter = document.getElementById('polish-up-text-after');
+const polishBtn = document.getElementById('polish-up-arr-btn');
+const polishWindow2 = document.getElementById('polish-up-window-after');
 
 let carouselNum = 1;
 
 // burger btn handler
 
 const handleBurgerBtn = () => {
-	burgerMidBar.classList.toggle('top-bar__burger-btn-mid-bar--none');
+	burgerMidBar.classList.toggle('top-bar__burger-box-btn-mid-bar--none');
 	burgerBtn.classList.toggle('rotateBefore');
 	burgerBtn.classList.toggle('rotateAfter');
 	nav.classList.toggle('nav--show');
@@ -179,6 +194,15 @@ const vanBtnHandler = () => {
 	changePriceHandler(27, 29, 31, 33, 35);
 };
 
+// washing / polish section btn handler
+
+const washingUpholsteryBtnHandler = () => {
+	upholsteryPolishUpCarousel.style = 'left: -100%'
+};
+const polishUpBtnHandler = () => {
+	upholsteryPolishUpCarousel.style = 'left: 0%'
+};
+
 // zip handle
 
 const widthOfBox = () => {
@@ -195,7 +219,7 @@ const gap = () => (window.innerWidth - widthOfBox()) / 2;
 
 // zip handle % version
 
-const mousemoveHandler = () => {
+const mousemoveUpholsteryHandler = () => {
 	const width = widthOfBox();
 	const xValue = event.pageX;
 
@@ -215,17 +239,49 @@ const mousemoveHandler = () => {
 	};
 
 	if (calcPerc() > 0 && calcPerc() < 100) {
-		window2.style.left = `${calcPerc()}%`;
-		btn.style.left = `${calcPerc()}%`;
+		upholsteryWindow2.style.left = `${calcPerc()}%`;
+		upholsteryBtn.style.left = `${calcPerc()}%`;
 
-		textBefore.style.opacity = calcOpacityBefore();
-		textAfter.style.opacity = calcOpacityAfter();
+		upholsteryTextBefore.style.opacity = calcOpacityBefore();
+		upholsteryTextAfter.style.opacity = calcOpacityAfter();
+	}
+};
+
+const mousemovePolishUpHandler = () => {
+	const width = widthOfBox();
+	const xValue = event.pageX;
+
+	const calcPerc = () => {
+		const result = ((xValue - gap()) / width) * 100;
+		return result;
+	};
+
+	const calcOpacityBefore = () => {
+		const result = (xValue - gap()) / width;
+		return result;
+	};
+
+	const calcOpacityAfter = () => {
+		const result = (width + gap() - xValue) / width;
+		return result;
+	};
+
+	if (calcPerc() > 0 && calcPerc() < 100) {
+		polishWindow2.style.left = `${calcPerc()}%`;
+		polishBtn.style.left = `${calcPerc()}%`;
+
+		polishTextBefore.style.opacity = calcOpacityBefore();
+		polishTextAfter.style.opacity = calcOpacityAfter();
 	}
 };
 
 // listeners
 
 burgerBtn.addEventListener('click', handleBurgerBtn);
+allNavLinks.forEach(item => item.addEventListener('click', handleBurgerBtn))
+linkToUpholstery.addEventListener('click', polishUpBtnHandler)
+linkToPolishUp.addEventListener('click', washingUpholsteryBtnHandler)
+
 rightArrBtn.addEventListener('click', carouselRightArrHandle);
 leftArrBtn.addEventListener('click', carouselLeftArrHandle);
 
@@ -240,16 +296,33 @@ carouselBtn7.addEventListener('click', takeMeTo7thPicture);
 hatchBtn.addEventListener('click', hatchBtnHandler);
 vanBtn.addEventListener('click', vanBtnHandler);
 
-btn.addEventListener('mousedown', () => {
-	document.addEventListener('mousemove', mousemoveHandler);
+washingUpholsteryBtn.addEventListener('click', washingUpholsteryBtnHandler);
+polishUpBtn.addEventListener('click', polishUpBtnHandler);
+
+upholsteryBtn.addEventListener('mousedown', () => {
+	document.addEventListener('mousemove', mousemoveUpholsteryHandler);
 });
-btn.addEventListener('touchstart', () => {
-	document.addEventListener('touchmove', mousemoveHandler);
+upholsteryBtn.addEventListener('touchstart', () => {
+	document.addEventListener('touchmove', mousemoveUpholsteryHandler);
+});
+
+polishBtn.addEventListener('mousedown', () => {
+	document.addEventListener('mousemove', mousemovePolishUpHandler);
+});
+polishBtn.addEventListener('touchstart', () => {
+	document.addEventListener('touchmove', mousemovePolishUpHandler);
 });
 
 document.addEventListener('mouseup', () => {
-	document.removeEventListener('mousemove', mousemoveHandler);
+	document.removeEventListener('mousemove', mousemoveUpholsteryHandler);
 });
 document.addEventListener('touchend', () => {
-	document.removeEventListener('touchmove', mousemoveHandler);
+	document.removeEventListener('touchmove', mousemoveUpholsteryHandler);
+});
+
+document.addEventListener('mouseup', () => {
+	document.removeEventListener('mousemove', mousemovePolishUpHandler);
+});
+document.addEventListener('touchend', () => {
+	document.removeEventListener('touchmove', mousemovePolishUpHandler);
 });
