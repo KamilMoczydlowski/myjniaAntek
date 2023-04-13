@@ -28,50 +28,66 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav id="nav" class="nav">
-    <ul class="nav-list">
-        <li class="nav-list__item">
-            <a href="#section-about" class="nav-list__item-link">O NAS</a>
-        </li>
-        <li class="nav-list__item">
-            <a href="#section-what-to-offer" class="nav-list__item-link">OFERTA</a>
-        </li>
-        <li class="nav-list__item">
-            <a href="#section-washing-programs" class="nav-list__item-link">PROGRAMY MYCIA</a>
-        </li>
-        <li class="nav-list__item">
-            <a href="#section-washing-upholstery-polish-up" id="nav-link-washing-upholstery"
-                class="nav-list__item-link">PRANIE TAPICERKI</a>
-        </li>
-        <li class="nav-list__item">
-            <a href="#section-washing-upholstery-polish-up" id="nav-link-polish-up" class="nav-list__item-link">POLEROWANIE LAKIERU I LAMP</a>
-        </li>
-        <li class="nav-list__item">
-            <a href="#section-how-to-order" class="nav-list__item-link">JAK ZAMÓWIĆ?</a>
-        </li>
-        <li class="nav-list__item">
-            <a href="#section-gallery" class="nav-list__item-link">GALERIA</a>
-        </li>
-        <li class="nav-list__item">
-            <a href="#contact-info" class="nav-list__item-link">KONTAKT</a>
-        </li>
-    </ul>
-</nav>
+    <header id="header" class="header">
         <div class="container">
             <div class="wrapper">
-                <div class="top-bar">
-                    <img src="../dist/img/logo.webp" alt="" class="top-bar__logo">
-                    <h2 class="top-bar__title">Myjnia Antek</h2>
-                    <div class="top-bar__burger-box">
-                        <div id="burger-btn" class="top-bar__burger-box-btn">
-                            <span id='burger-mid-bar' class='top-bar__burger-box-btn-mid-bar'></span>
-                        </div>
-                    </div>
-                </div>
                 <div class="carousel-box">
+                    <div class="top-bar">
+                        <img src="../dist/img/logo.webp" alt="" class="top-bar__logo">
+                        <!-- <p class="top-bar__title">Myjnia Antek</p> -->
+                        <div class="top-bar__burger-box">
+                            <div id="burger-btn" class="top-bar__burger-box-btn">
+                                <span id='burger-mid-bar' class='top-bar__burger-box-btn-mid-bar'></span>
+                            </div>
+                        </div>
+                        <nav id="nav" class="nav">
+    <div class="container">
+        <div class="wrapper">
+            <ul class="nav-list">
+                <li class="nav-list__item">
+                    <a href="#section-about" class="nav-list__item-link">O NAS</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#section-what-to-offer" class="nav-list__item-link">OFERTA</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#section-washing-programs" class="nav-list__item-link">PROGRAMY MYCIA</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#section-washing-upholstery-polish-up" id="nav-link-washing-upholstery"
+                        class="nav-list__item-link">PRANIE TAPICERKI</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#section-washing-upholstery-polish-up" id="nav-link-polish-up"
+                        class="nav-list__item-link">POLEROWANIE LAKIERU I LAMP</a>
+                </li>
+                <li class="nav-list__item">
+                    <a href="#section-how-to-order" class="nav-list__item-link">JAK ZAMÓWIĆ?</a>
+                </li>
+                <!-- <li class="nav-list__item">
+                    <a href="#section-gallery" class="nav-list__item-link">GALERIA</a>
+                </li> -->
+                <li class="nav-list__item">
+                    <a href="#contact-info" class="nav-list__item-link">KONTAKT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+                    </div>
                     <div id="carousel-film" class="carousel">
-                        <div id="carousel-item-1" class="carousel-item carousel-item-1">
+                        <div id="carousel-item-0" class="carousel-item carousel-item-0">
+                            <div class="carousel-item-content">
+                                <h2 class="carousel-item-content__title">Polerowanie lamp</h2>
+                                <p class="carousel-item-content__text">Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing elit.
+                                    Modi,
+                                    quo?</p>
+                                <a href="#section-what-to-offer" class="carousel-item-content__link">Sprawdź naszą
+                                    ofertę!</a>
+                            </div>
+                        </div>
+                        <div id="carousel-item-1" class="carousel-item carousel-item-1 carousel-item-1--active">
                             <div class="carousel-item-content">
                                 <h1 class="carousel-item-content__title">Myjnia Antek Białystok</h1>
                                 <p class="carousel-item-content__text">Zapraszamy do skorzystania z naszych
@@ -136,6 +152,15 @@
                                     ofertę!</a>
                             </div>
                         </div>
+                        <div id="carousel-item-8" class="carousel-item carousel-item-8">
+                            <div class="carousel-item-content">
+                                <h1 class="carousel-item-content__title">Myjnia Antek Białystok</h1>
+                                <p class="carousel-item-content__text">Zapraszamy do skorzystania z naszych
+                                    profesjonalnych usług!</p>
+                                <a href="#section-washing-programs" class="carousel-item-content__link">Umyj u nas
+                                    auto!</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-btns">
                         <button id="left-arrow-button" class="arr-btn left-arr-btn">
@@ -175,6 +200,14 @@
     <main class="main">
         <div class="container">
             <div class="wrapper">
+                <a href="#header" id="take-me-up-arr" class="take-me-up-arr">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-up" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M6 15l6 -6l6 6"></path>
+                    </svg>
+                </a>
                 <section id="section-about" class="about">
                     <div class="about__content">
                         <div class="about__content-text">
@@ -187,7 +220,7 @@
                                 excepturi eligendi consequatur? Voluptate exercitationem nobis voluptates optio, id ea
                                 corrupti quam alias quidem.</p>
                             <p class="about__call-us-text">Zadzwoń i umów mycie</p>
-                            <a href="" class="about__phone-number">
+                            <a href="tel: +48509644309" class="about__phone-number">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone"
                                     width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                     fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -196,27 +229,37 @@
                                         d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
                                     </path>
                                 </svg>
-                                +48 123 456 789
+                                +48 509 644 309
                             </a>
                         </div>
-                        <img src="../dist/img/red-microfibre-mobile.webp" alt="" class="about__img">
+                        <img src="../dist/img/red-microfibre-mobile.webp"
+                            alt="fragment błotnika samochodu wycierany ścierką z mikrofibry" class="about__img">
                     </div>
                     <div class="about-icons-box">
                         <div class="about-icon-box">
-                            <img src="../dist/img/icons8-effective-detergent-50.png" alt=""
+                            <img src="../dist/img/effective-detergent-50.png" alt="ikona butelki z detergentem"
                                 class="about-icon-box__icon">
                             <h4 class="about-icon-box__title">Skuteczna chemia</h4>
-                            <p class="about-icon-box__description">Lorem ipsum dolor sit amet consectetur.</p>
+                            <p class="about-icon-box__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                         <div class="about-icon-box">
-                            <img src="../dist/img/icons8-modern-equipment-50.png" alt="" class="about-icon-box__icon">
+                            <img src="../dist/img/modern-equipment-50.png"
+                                alt="ikona maszyny odkurzająco-piorącej" class="about-icon-box__icon">
                             <h4 class="about-icon-box__title">Nowoczesny sprzęt</h4>
                             <p class="about-icon-box__description">Lorem ipsum dolor sit amet consectetur, adipisicing
                                 elit.</p>
                         </div>
                         <div class="about-icon-box">
-                            <img src="../dist/img/icons8-car-detailing-50.png" alt="" class="about-icon-box__icon">
+                            <img src="../dist/img/car-foam-icon.png" alt="ikona auta pokrytego pianą"
+                                class="about-icon-box__icon">
                             <h4 class="about-icon-box__title">Dbałość o detale</h4>
+                            <p class="about-icon-box__description">Lorem ipsum dolor sit amet consectetur adipisicing.
+                            </p>
+                        </div>
+                        <div class="about-icon-box">
+                            <img src="../dist/img/brush-50.png" alt="ikona szczotki do czyszczenia z pianą"
+                                class="about-icon-box__icon">
+                            <h4 class="about-icon-box__title">Doświadczona kadra</h4>
                             <p class="about-icon-box__description">Lorem ipsum dolor sit amet consectetur adipisicing.
                             </p>
                         </div>
@@ -230,17 +273,19 @@
                     </div>
                     <div class="what-to-offer__content">
                         <a href="#section-washing-programs" class="what-to-offer__content-item">
-                            <img src="../dist/img/bmw-roof-mobile.webp" alt=""
+                            <img src="../dist/img/bmw-roof-mobile.webp" alt="SUV widoczny od góry pod kątem"
                                 class="what-to-offer__content-item-img what-to-offer__content-item-img-1">
                             <h3 class="what-to-offer__content-item-title">Mycie zewnętrzne</h3>
                         </a>
                         <a href="#section-washing-upholstery-polish-up" class="what-to-offer__content-item">
-                            <img src="../dist/img/cleaning-inside.webp" alt=""
+                            <img src="../dist/img/cleaning-inside.webp"
+                                alt="widok na wnętrze pojazdu od strony pasażera przez uchylone drzwi"
                                 class="what-to-offer__content-item-img what-to-offer__content-item-img-2">
                             <h3 class="what-to-offer__content-item-title">Pranie tapicerki</h3>
                         </a>
                         <a href="#section-washing-upholstery-polish-up" class="what-to-offer__content-item">
-                            <img src="../dist/img/polish-car-lamp.webp" alt=""
+                            <img src="../dist/img/polish-car-lamp.webp"
+                                alt="przód i lewy bok pojazdu widoczny z lewej pod kątem"
                                 class="what-to-offer__content-item-img what-to-offer__content-item-img-3">
                             <h3 class="what-to-offer__content-item-title">Polerowanie lakieru oraz lamp</h3>
                         </a>
@@ -257,7 +302,7 @@
                     </div>
                     <div class="washing-programs__cards">
                         <div class="washing-programs__cards-single-card">
-                            <img src="../dist/img/sponge-foam-mobile.webp" alt=""
+                            <img src="../dist/img/sponge-foam-mobile.webp" alt="auto myte za pomocą gąbki"
                                 class="washing-programs__cards-single-card-img">
                             <div class="washing-programs__cards-single-card-content">
                                 <div class="washing-programs__cards-single-card-content-top">
@@ -267,7 +312,8 @@
                                 </div>
                                 <div class="washing-programs__cards-single-card-content-bot">
                                     <h3 class="washing-programs__cards-single-card-content-bot-title">PROGRAM 1</h3>
-                                    <a href="" class="washing-programs__cards-single-card-content-bot-order">
+                                    <a href="tel: +48509644309"
+                                        class="washing-programs__cards-single-card-content-bot-order">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-phone" width="22" height="22"
                                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -301,7 +347,8 @@
                             </div>
                         </div>
                         <div class="washing-programs__cards-single-card">
-                            <img src="../dist/img/foam.webp" alt="" class="washing-programs__cards-single-card-img">
+                            <img src="../dist/img/foam.webp" alt="piana w przybliżeniu"
+                                class="washing-programs__cards-single-card-img">
                             <div class="washing-programs__cards-single-card-content">
                                 <div class="washing-programs__cards-single-card-content-top">
                                     <p class="washing-programs__cards-single-card-content-top-price">cena</p>
@@ -310,7 +357,8 @@
                                 </div>
                                 <div class="washing-programs__cards-single-card-content-bot">
                                     <h3 class="washing-programs__cards-single-card-content-bot-title">PROGRAM 2</h3>
-                                    <a href="" class="washing-programs__cards-single-card-content-bot-order">
+                                    <a href="tel: +48509644309"
+                                        class="washing-programs__cards-single-card-content-bot-order">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-phone" width="22" height="22"
                                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -350,7 +398,7 @@
                             </div>
                         </div>
                         <div class="washing-programs__cards-single-card">
-                            <img src="../dist/img/water-with-foam.webp" alt=""
+                            <img src="../dist/img/water-with-foam.webp" alt="fragment tafli wody z pianą"
                                 class="washing-programs__cards-single-card-img">
                             <div class="washing-programs__cards-single-card-content">
                                 <div class="washing-programs__cards-single-card-content-top">
@@ -360,7 +408,8 @@
                                 </div>
                                 <div class="washing-programs__cards-single-card-content-bot">
                                     <h3 class="washing-programs__cards-single-card-content-bot-title">PROGRAM 3</h3>
-                                    <a href="" class="washing-programs__cards-single-card-content-bot-order">
+                                    <a href="tel: +48509644309"
+                                        class="washing-programs__cards-single-card-content-bot-order">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-phone" width="22" height="22"
                                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -403,7 +452,8 @@
                             </div>
                         </div>
                         <div class="washing-programs__cards-single-card">
-                            <img src="../dist/img/water.webp" alt="" class="washing-programs__cards-single-card-img">
+                            <img src="../dist/img/water.webp" alt="zdjęcie podwodnych pęcherzyków powietrza"
+                                class="washing-programs__cards-single-card-img">
                             <div class="washing-programs__cards-single-card-content">
                                 <div class="washing-programs__cards-single-card-content-top">
                                     <p class="washing-programs__cards-single-card-content-top-price">cena</p>
@@ -412,7 +462,8 @@
                                 </div>
                                 <div class="washing-programs__cards-single-card-content-bot">
                                     <h3 class="washing-programs__cards-single-card-content-bot-title">PROGRAM 4</h3>
-                                    <a href="" class="washing-programs__cards-single-card-content-bot-order">
+                                    <a href="tel: +48509644309"
+                                        class="washing-programs__cards-single-card-content-bot-order">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-phone" width="22" height="22"
                                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -458,7 +509,8 @@
                             </div>
                         </div>
                         <div class="washing-programs__cards-single-card">
-                            <img src="../dist/img/bubble.webp" alt="" class="washing-programs__cards-single-card-img">
+                            <img src="../dist/img/bubble.webp" alt="bąbelki zrobione z mydła"
+                                class="washing-programs__cards-single-card-img">
                             <div class="washing-programs__cards-single-card-content">
                                 <div class="washing-programs__cards-single-card-content-top">
                                     <p class="washing-programs__cards-single-card-content-top-price">cena</p>
@@ -467,7 +519,8 @@
                                 </div>
                                 <div class="washing-programs__cards-single-card-content-bot">
                                     <h3 class="washing-programs__cards-single-card-content-bot-title">PROGRAM 5</h3>
-                                    <a href="" class="washing-programs__cards-single-card-content-bot-order">
+                                    <a href="tel: +48509644309"
+                                        class="washing-programs__cards-single-card-content-bot-order">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-phone" width="22" height="22"
                                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -521,7 +574,7 @@
                     <div class="washing-programs__extend-offer">
                         <h3 class="washing-programs__extend-offer-title">Dodatkowo każdy program można poszerzyć o:</h3>
                         <div class="washing-programs__extend-offer-content">
-                            <img src="../dist/img/cleaning-mobile.webp" alt=""
+                            <img src="../dist/img/cleaning-mobile.webp" alt="pracownik myjni wycierający próg samochodu"
                                 class="washing-programs__extend-offer-content-img">
                             <table class="washing-programs__extend-offer-content-table">
                                 <tr class="washing-programs__extend-offer-content-table-row">
@@ -584,7 +637,15 @@
                                     <h2 class="washing-upholstery__compare-header-title">Pranie tapicerki</h2>
                                     <button id="washing-upholstery-header-btn"
                                         class="washing-upholstery__compare-header-btn">
-                                        Polerowanie lakieru
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-arrow-big-right-filled" width="24"
+                                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M12.089 3.634a2 2 0 0 0 -1.089 1.78l-.001 2.586h-6.999a2 2 0 0 0 -2 2v4l.005 .15a2 2 0 0 0 1.995 1.85l6.999 -.001l.001 2.587a2 2 0 0 0 3.414 1.414l6.586 -6.586a2 2 0 0 0 0 -2.828l-6.586 -6.586a2 2 0 0 0 -2.18 -.434l-.145 .068z"
+                                                stroke-width="0" fill="currentColor"></path>
+                                        </svg>
                                     </button>
                                 </div>
                                 <div class="washing-upholstery__compare-content">
@@ -593,14 +654,15 @@
                                             czyszczenie tapicerki samochodowej</h3>
                                         <p class="washing-upholstery__compare-content-description-text">Dzięki
                                             kompleksowemu
-                                            czyszczenie tapicerki jesteśmy w stanie skutecznie
+                                            czyszczeniu tapicerki jesteśmy w stanie skutecznie
                                             zlikwidowac brud
                                             oraz plamy powstałe na materiale dzięki czemu otrzymujemy czystą, świeżą i
                                             pachnącą
                                             tapicerkę. Pierzemy fotele, kanapy, boczki w drzwiach , umyjemy wnętrze
                                             bagażnika.
                                         </p>
-                                        <a href="" class="washing-upholstery__compare-content-description-order">
+                                        <a href="tel: +48509644309"
+                                            class="washing-upholstery__compare-content-description-order">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 class="icon icon-tabler icon-tabler-phone" width="22" height="22"
                                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -655,7 +717,7 @@
                                     </div>
                                     <div class="washing-upholstery__compare-content-icons">
                                         <div class="washing-upholstery__compare-content-icons-box">
-                                            <img src="../dist/img/icons8-eko-detergent-50.png" alt=""
+                                            <img src="../dist/img/eko-detergent-50.png" alt="ikona butelek detergentu"
                                                 class="washing-upholstery__compare-content-icons-box-icon">
                                             <div class="washing-upholstery__compare-content-icons-box-description">
                                                 <h4
@@ -667,7 +729,7 @@
                                             </div>
                                         </div>
                                         <div class="washing-upholstery__compare-content-icons-box">
-                                            <img src="../dist/img/icons8-safe-for-leather-and-fabrics-50.png" alt=""
+                                            <img src="../dist/img/safe-for-leather-and-fabrics-50.png" alt="ikona fotela samochodu"
                                                 class="washing-upholstery__compare-content-icons-box-icon">
                                             <div class="washing-upholstery__compare-content-icons-box-description">
                                                 <h4
@@ -679,7 +741,7 @@
                                             </div>
                                         </div>
                                         <div class="washing-upholstery__compare-content-icons-box">
-                                            <img src="../dist/img/icons8-natural-aroma-50.png" alt=""
+                                            <img src="../dist/img/natural-aroma-50.png" alt="ikona butelki ze spryskiwaczem wraz z ręcznikami do wycierania"
                                                 class="washing-upholstery__compare-content-icons-box-icon">
                                             <div class="washing-upholstery__compare-content-icons-box-description">
                                                 <h4
@@ -735,7 +797,9 @@
                                                 środki chemiczne.</p>
                                         </div>
                                     </div>
-                                    <img src="" alt="" class="washing-upholstery__step-by-step-content-img">
+                                    <img src="../dist/img/car-interior-mobile.jpg"
+                                        alt="wnętrze pojazdu widziane przez otwarte drzwi kierowcy"
+                                        class="washing-upholstery__step-by-step-content-img">
                                     <div class="washing-upholstery__step-by-step-content-box">
                                         <div class="washing-upholstery__step-by-step-content-box-description">
                                             <h4 class="washing-upholstery__step-by-step-content-box-description-title">
@@ -782,9 +846,16 @@
                         <div id="polish-up" class="polish-up">
                             <div class="washing-upholstery__compare">
                                 <div class="washing-upholstery__compare-header">
-                                    <button id="polish-up-header-btn"
-                                        class="washing-upholstery__compare-header-btn">
-                                         Pranie tapicerki
+                                    <button id="polish-up-header-btn" class="washing-upholstery__compare-header-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-arrow-big-left-filled" width="24"
+                                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M9.586 4l-6.586 6.586a2 2 0 0 0 0 2.828l6.586 6.586a2 2 0 0 0 2.18 .434l.145 -.068a2 2 0 0 0 1.089 -1.78v-2.586h7a2 2 0 0 0 2 -2v-4l-.005 -.15a2 2 0 0 0 -1.995 -1.85l-7 -.001v-2.585a2 2 0 0 0 -3.414 -1.414z"
+                                                stroke-width="0" fill="currentColor"></path>
+                                        </svg>
                                     </button>
                                     <h2 class="washing-upholstery__compare-header-title">Polerowanie lakieru</h2>
                                 </div>
@@ -801,7 +872,8 @@
                                             explicabo facilis animi reiciendis tempore. Eos a, placeat iste doloribus
                                             corporis fugiat animi ea explicabo sunt maxime.
                                         </p>
-                                        <a href="" class="washing-upholstery__compare-content-description-order">
+                                        <a href="tel: +48509644309"
+                                            class="washing-upholstery__compare-content-description-order">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 class="icon icon-tabler icon-tabler-phone" width="22" height="22"
                                                 viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -856,7 +928,7 @@
                                     </div>
                                     <div class="washing-upholstery__compare-content-icons">
                                         <div class="washing-upholstery__compare-content-icons-box">
-                                            <img src="../dist/img/icons8-eko-detergent-50.png" alt=""
+                                            <img src="../dist/img/car-polish-icon.png" alt="icona czystego i błyszczącego auta"
                                                 class="washing-upholstery__compare-content-icons-box-icon">
                                             <div class="washing-upholstery__compare-content-icons-box-description">
                                                 <h4
@@ -868,7 +940,7 @@
                                             </div>
                                         </div>
                                         <div class="washing-upholstery__compare-content-icons-box">
-                                            <img src="../dist/img/icons8-safe-for-leather-and-fabrics-50.png" alt=""
+                                            <img src="../dist/img/polishing-icon.png" alt="ikona maszyny do polerowania lakieru"
                                                 class="washing-upholstery__compare-content-icons-box-icon">
                                             <div class="washing-upholstery__compare-content-icons-box-description">
                                                 <h4
@@ -880,7 +952,7 @@
                                             </div>
                                         </div>
                                         <div class="washing-upholstery__compare-content-icons-box">
-                                            <img src="../dist/img/icons8-natural-aroma-50.png" alt=""
+                                            <img src="../dist/img/sparks-icon.png" alt="ikonka przedstawiająca błyszczące gwiazdki"
                                                 class="washing-upholstery__compare-content-icons-box-icon">
                                             <div class="washing-upholstery__compare-content-icons-box-description">
                                                 <h4
@@ -938,7 +1010,9 @@
                                                 natus?.</p>
                                         </div>
                                     </div>
-                                    <img src="" alt="" class="washing-upholstery__step-by-step-content-img">
+                                    <img src="../dist/img/cleaning-microfibre-mobile.jpg"
+                                        alt="prawcownik myjni poleruje lakier"
+                                        class="washing-upholstery__step-by-step-content-img">
                                     <div class="washing-upholstery__step-by-step-content-box">
                                         <div class="washing-upholstery__step-by-step-content-box-description">
                                             <h4 class="washing-upholstery__step-by-step-content-box-description-title">
@@ -987,12 +1061,14 @@
                         <div class="how-to-order__content-item">
                             <span class="how-to-order__content-item-number">2</span>
                             <h3 class="how-to-order__content-item-title">Przyjedź do nas</h3>
-                            <p class="how-to-order__content-item-text">a my podpowiemy odpowiedni program i wycenimy usługę</p>
+                            <p class="how-to-order__content-item-text">a my podpowiemy odpowiedni program i wycenimy
+                                usługę</p>
                         </div>
                         <div class="how-to-order__content-item">
                             <span class="how-to-order__content-item-number">3</span>
                             <h3 class="how-to-order__content-item-title">Oglądaj przy kawie</h3>
-                            <p class="how-to-order__content-item-text">jak nasza wykwalifikowana kadra pozbywa się wszelkich zabrudzeń</p>
+                            <p class="how-to-order__content-item-text">jak nasza wykwalifikowana kadra pozbywa się
+                                wszelkich zabrudzeń</p>
                         </div>
                         <div class="how-to-order__content-item">
                             <span class="how-to-order__content-item-number">4</span>
@@ -1001,13 +1077,49 @@
                         </div>
                     </div>
                 </section>
-                <section id="section-gallery" class="gallery"></section>
+                <!-- <section id="section-gallery" class="gallery">
+                    <h2 class="gallery__title">Zobacz auta naszych zadowolonych klientów</h2>
+                    <div class="gallery__carousel">
+                        <div class="gallery__carousel-box"></div>
+                    </div>
+                </section> -->
             </div>
         </div>
     </main>
-    <footer id="contact-info">
+    <footer id="contact-info" class="footer">
         <div class="container">
-            <div class="wrapper"></div>
+            <div class="wrapper">
+                <div class="footer-content">
+                    <div class="footer-content__company-data">
+                        <h2 class="footer-content__company-data-name">"Antek" Myjnia Samochodowa Beata Katarzyna
+                            Popławska</h2>
+                        <div class="footer-content__company-data-adress">
+                            <p class="footer-content__company-data-adress-street">al. Paderewskiego 8</p>
+                            <p class="footer-content__company-data-adress-city">15-349 Białystok</p>
+                        </div>
+                        <p class="footer-content__company-data-nip">NIP: 9660258844</p>
+                    </div>
+                    <div class="footer-content__info">
+                        <a href="" class="footer-content__info-phone">+48 509 644 309</a>
+                        <div class="footer-content__info-open-hours">
+                            <h3 class="footer-content__info-open-hours-title">Godziny otwarcia</h3>
+                            <p class="footer-content__info-open-hours-week">Pon - Pt: <span
+                                    class="footer-content__info-open-hours-highlight">8:00 - 17:00</span></p>
+                            <p class="footer-content__info-open-hours-weekend">Sob: <span
+                                    class="footer-content__info-open-hours-highlight">8:00 - 16:00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-signature">
+                    <p id="footer-signature-text" class="footer-signature-text">Myjnia "Antek" - 2023</p>
+                    <p class="footer-signature-icons-info">
+                        icons by
+                        <a href="https://tabler-icons.io/" class="footer-signature-icons-info-link">tabler-icons.io</a>
+                        and
+                        <a href="https://icons8.com/" class="footer-signature-icons-info-link">icons8.com</a>
+                    </p>
+                </div>
+            </div>
         </div>
         <!-- icons by tabler-icons.io and icons8.com -->
         <!-- <a target="_blank" href="https://icons8.com/icon/FvEIFumk9aeO/car-wash">Car Wash</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->

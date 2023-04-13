@@ -29,6 +29,10 @@ const carouselBtnsArr = [
 	carouselBtn7,
 ];
 
+// take-me-up-link
+
+const takeMeUpArrow = document.getElementById('take-me-up-arr')
+
 // washing programs
 const hatchBtn = document.getElementById('hatch-sedan-kombi-btn');
 const vanBtn = document.getElementById('van-bus-suv-btn');
@@ -70,27 +74,47 @@ const handleBurgerBtn = () => {
 
 // header carousel
 
+const removeActiveClass = (value) => {
+
+	const newInactiveItem = document.getElementById(`carousel-item-${value}`)
+	newInactiveItem.classList.remove(`carousel-item-${value}--active`)
+
+	const newInactiveBtn = document.getElementById(`carousel-btn-${value}`);
+	newInactiveBtn.classList.remove('carousel-btn--active');
+	
+}
+
+const addActiveClass = (value) => {
+
+	const newActiveItem = document.getElementById(`carousel-item-${value}`)
+	newActiveItem.classList.add(`carousel-item-${value}--active`)
+
+	const newActiveBtn = document.getElementById(`carousel-btn-${value}`);
+	newActiveBtn.classList.add('carousel-btn--active');
+	
+}
+
 const carouselToTheRight = () => {
+
 	if (carouselNum < 7) {
+
 		carouselFilm.style = `left: -${carouselNum}00%`;
 
-		const inactiveBtn = document.getElementById(`carousel-btn-${carouselNum}`);
-		inactiveBtn.classList.remove('carousel-btn--active');
+		removeActiveClass(carouselNum)
 
 		++carouselNum;
 
-		const newActiveBtn = document.getElementById(`carousel-btn-${carouselNum}`);
-		newActiveBtn.classList.add('carousel-btn--active');
+		addActiveClass(carouselNum)
+
 	} else {
-		const inactiveBtn = document.getElementById(`carousel-btn-${carouselNum}`);
-		inactiveBtn.classList.remove('carousel-btn--active');
+		
+		removeActiveClass(carouselNum)
 
 		carouselNum = 1;
 
-		carouselFilm.style = `left: -${carouselNum - 1}00%`;
+		carouselFilm.style = `left: ${carouselNum - 1}00%`;
 
-		const newActiveBtn = document.getElementById(`carousel-btn-${carouselNum}`);
-		newActiveBtn.classList.add('carousel-btn--active');
+		addActiveClass(carouselNum)
 	}
 };
 
@@ -108,37 +132,36 @@ const carouselRightArrHandle = () => {
 
 const carouselLeftArrHandle = () => {
 	if (carouselNum > 1) {
-		const inactiveBtn = document.getElementById(`carousel-btn-${carouselNum}`);
-		inactiveBtn.classList.remove('carousel-btn--active');
+
+		removeActiveClass(carouselNum)
 
 		--carouselNum;
 
 		carouselFilm.style = `left: -${carouselNum - 1}00%`;
 
-		const newActiveBtn = document.getElementById(`carousel-btn-${carouselNum}`);
-		newActiveBtn.classList.add('carousel-btn--active');
+		addActiveClass(carouselNum)
+
 	} else {
-		const inactiveBtn = document.getElementById(`carousel-btn-${carouselNum}`);
-		inactiveBtn.classList.remove('carousel-btn--active');
+
+		removeActiveClass(carouselNum)
 
 		carouselNum = 7;
 
 		carouselFilm.style = `left: -${carouselNum - 1}00%`;
 
-		const newActiveBtn = document.getElementById(`carousel-btn-${carouselNum}`);
-		newActiveBtn.classList.add('carousel-btn--active');
+		addActiveClass(carouselNum)
 	}
 
 	resetInterval();
 };
 
 const takeMeToPicture = carouselNum => {
+
 	carouselBtnsArr.forEach(item => item.classList.remove('carousel-btn--active'));
 
 	carouselFilm.style = `left: -${carouselNum - 1}00%`;
 
-	const newActiveBtn = document.getElementById(`carousel-btn-${carouselNum}`);
-	newActiveBtn.classList.add('carousel-btn--active');
+	addActiveClass(carouselNum)
 
 	resetInterval();
 };
@@ -171,6 +194,16 @@ const takeMeTo7thPicture = () => {
 	carouselNum = 7;
 	takeMeToPicture(carouselNum);
 };
+
+// takeMeUpArrow show handler
+
+const showTakeMeUpArrHandler = () => {
+	if (window.scrollY > window.innerHeight) {
+		takeMeUpArrow.style = 'opacity: 1;'
+	} else {
+		takeMeUpArrow.style = 'opacity: 0;'
+	}
+}
 
 // washing programs btn handlers
 
@@ -277,10 +310,14 @@ const mousemovePolishUpHandler = () => {
 
 // listeners
 
+// burger & nav listeners
+
 burgerBtn.addEventListener('click', handleBurgerBtn);
 allNavLinks.forEach(item => item.addEventListener('click', handleBurgerBtn))
 linkToUpholstery.addEventListener('click', polishUpBtnHandler)
 linkToPolishUp.addEventListener('click', washingUpholsteryBtnHandler)
+
+// carousel listeners
 
 rightArrBtn.addEventListener('click', carouselRightArrHandle);
 leftArrBtn.addEventListener('click', carouselLeftArrHandle);
@@ -293,11 +330,19 @@ carouselBtn5.addEventListener('click', takeMeTo5thPicture);
 carouselBtn6.addEventListener('click', takeMeTo6thPicture);
 carouselBtn7.addEventListener('click', takeMeTo7thPicture);
 
+// takeMeUpArrow listeners
+
+document.addEventListener('scroll', showTakeMeUpArrHandler)
+
+// washing programs listeners
+
 hatchBtn.addEventListener('click', hatchBtnHandler);
 vanBtn.addEventListener('click', vanBtnHandler);
 
 washingUpholsteryBtn.addEventListener('click', washingUpholsteryBtnHandler);
 polishUpBtn.addEventListener('click', polishUpBtnHandler);
+
+// zip listeners
 
 upholsteryBtn.addEventListener('mousedown', () => {
 	document.addEventListener('mousemove', mousemoveUpholsteryHandler);
