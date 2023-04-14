@@ -1006,7 +1006,8 @@ button {
 						}
 					}
 
-					&-img {
+					&-img-upholstery,
+					&-img-polish-up {
 						display: none;
 					}
 				}
@@ -1535,7 +1536,7 @@ button {
 		&-content {
 			&__info {
 				&-phone {
-					transition: transform .3s;
+					transition: transform 0.3s;
 				}
 
 				&-phone:hover {
