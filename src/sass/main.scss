@@ -14,6 +14,7 @@
 }
 
 body {
+	min-height: 100vh;
 	max-width: 100vw;
 	font-family: 'Montserrat', sans-serif;
 	background-color: rgba(0, 174, 239, 0.1);
@@ -22,6 +23,12 @@ body {
 button {
 	font-family: 'Montserrat', sans-serif;
 	cursor: pointer;
+}
+
+.body-404 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .container {
@@ -36,20 +43,36 @@ button {
 }
 
 .header {
-	position: relative;
 	height: 100vh;
-	min-height: 568px;
+	min-height: 56.8rem;
 	max-height: 60rem;
 	overflow: hidden;
+}
+
+.header-404 {
+	height: 100%;
+	width: 100%;
+}
+
+.header,
+.header-404 {
+	position: relative;
 
 	.carousel-box {
 		position: relative;
+
+		.top-bar {
+			position: absolute;
+		}
+	}
+
+	.carousel-box,
+	.box-404 {
 		height: 100%;
 		width: 100%;
 		overflow: hidden;
 
 		.top-bar {
-			position: absolute;
 			display: flex;
 			justify-content: space-between;
 			height: 10rem;
@@ -333,6 +356,43 @@ button {
 						width: 1.5rem;
 					}
 				}
+			}
+		}
+
+		.error-msg-box {
+			&__title {
+				margin: 3rem 0;
+				font-size: 1.8rem;
+				text-align: center;
+			}
+
+			&__emoji {
+				display: block;
+				font-size: 15rem;
+				text-align: center;
+			}
+
+			&__sub-title {
+				margin: 3rem 0;
+				font-size: 3rem;
+				text-align: center;
+				color: $headers;
+			}
+
+			&__text {
+				padding: 0 0.5rem;
+				font-size: 2rem;
+				text-align: center;
+			}
+
+			&__phone {
+				display: block;
+				margin: 2rem auto;
+				font-size: 2rem;
+				text-align: center;
+				font-weight: 600;
+				text-decoration: none;
+				color: $bgc-cta;
 			}
 		}
 	}
@@ -768,7 +828,7 @@ button {
 	}
 
 	.washing-upholstery-polish-up {
-		padding: 5rem 0;
+		padding: 5rem 0 0;
 		height: 100%;
 		width: 100%;
 		background-color: rgba($color: #00aeef, $alpha: 0.1);
@@ -1321,8 +1381,8 @@ button {
 		max-width: 1200px;
 	}
 
-	.header {
-		.carousel-box {
+	.header, .header-404 {
+		.carousel-box, .box-404 {
 			overflow: visible;
 
 			.top-bar {
